@@ -6,7 +6,7 @@ RUN apt update -y && \
     apt-add-repository -y ppa:ansible/ansible && \
     apt update -y && \
     apt install -y ansible && \
-    apt install -y curl python-dev && \
+    apt install -y curl python-dev git && \
     curl "https://bootstrap.pypa.io/get-pip.py" -o "/tmp/get-pip.py" && \
     python /tmp/get-pip.py && \
     pip install --upgrade pip && pip install --upgrade setuptools && \
